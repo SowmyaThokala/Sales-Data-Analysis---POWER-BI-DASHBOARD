@@ -204,9 +204,9 @@ Findings and Insights
 
 ### Tools & Techniques Used:
 Category	      Tool/Concept
-Data Visualization -	Power BI Desktop
-Data Cleaning -	Power Query Editor
-Data Modeling - Star Schema (Fact + Dimensions)
-DAX Functions -	CALCULATE, USERELATIONSHIP, ALL, SUM, AVERAGE, COUNTROWS, TOPN
-Interactivity -	Slicers, Drill-downs, Dynamic Filters
-Publishing -	Power BI Service
+Data Visualization -	Power BI Desktop:
+Data Cleaning -	Power Query Editor:
+Data Modeling - Star Schema (Fact + Dimensions):
+DAX Functions -	CALCULATE, USERELATIONSHIP, ALL, SUM, AVERAGE, COUNTROWS, TOPN:
+Interactivity -	Slicers, Drill-downs, Dynamic Filters:
+Publishing -	Power BI Service.
