@@ -1,11 +1,11 @@
 Dashboard Link: https://app.powerbi.com/groups/me/reports/6ddbbe39-34f0-4659-8001-14012978a657/978b4a88ab811c76c219?experience=power-bi
 
-Dashboard Objective:
+## Dashboard Objective:
 This Power BI report was developed for ElectroHub, a multi-category retail company that sells products across electronics, footwear, clothing, home appliances, accessories, kitchenware, bags, and personal care.
 
 The goal of this project is to help the management understand sales trends, profitability, customer buying patterns, and discount performance across different product categories and time periods — ultimately aiding in data-driven business decisions.
 
-Problem Statement:
+## Problem Statement:
 
 ElectroHub’s management team wanted to gain deeper insights into their sales and profitability. They needed a dynamic and interactive dashboard that would answer key business questions such as:
 
@@ -25,9 +25,9 @@ Can we view all transaction details (Sales, Profit, Discount, Net Sales, etc.) f
 
 What are the Sales by City?
 
-Steps Followed:
+## Steps Followed:
 
-Step 1: Data Import and Model Design
+### Step 1: Data Import and Model Design
 
 Imported the following datasets into Power BI Desktop:
 
@@ -45,13 +45,13 @@ One-to-Many relationships between Fact table and each Dimension table (Customer 
 
 Ensured relationship integrity with referential integrity enabled.
 
-Step 2: Data Cleaning & Transformation
+### Step 2: Data Cleaning & Transformation
 
 In Dim_Promotion, the Discount column had a mix of text and numbers.Created a conditional column to extract numeric discount values and calculate Discount %.
 
 In Fact Table, Price per Unit had null values.Performed a Left Outer Join between Fact Table and Dim_Product on Product ID to fill missing prices.Replaced null values in Discount % with 0.
 
-Step 3: Calculated Columns & Measures
+### Step 3: Calculated Columns & Measures
 Custom Columns
 
 (a) Total Sales
@@ -112,7 +112,7 @@ CALCULATE(
     USERELATIONSHIP('DateTable2'[Date], 'Fact_Sales'[Order Date])
 )
 
-Step 4: Visualizations
+### Step 4: Visualizations
 Requirement 1: Top/Bottom 5 Products
 
 Visual: Stacked Bar Chart
@@ -202,7 +202,7 @@ Findings and Insights
 3)Highest number of sales recorded on Novemeber 25,2022.
 
 
-Tools & Techniques Used:
+### Tools & Techniques Used:
 Category	      Tool/Concept
 Data Visualization -	Power BI Desktop
 Data Cleaning -	Power Query Editor
